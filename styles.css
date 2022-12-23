@@ -1,0 +1,158 @@
+/* 
+Google free fonts
+
+font-family: 'Crimson Text', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+*,
+::before,
+::after {
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #E9DCC9;
+}
+
+img{
+  transform: rotate(-0.25turn);
+  object-fit: cover;
+  display: block;
+}
+
+#header{
+  position: fixed;
+  background-color: #E9DCC9;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 6rem;
+}
+
+#logo {
+  display: inline-flex;
+  margin-left: 5%;
+  gap: 3rem;
+}
+
+#logo p {
+  font-size: 2rem;
+}
+
+#nav-bar {
+  margin-right: 5%;
+}
+
+#nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 8rem;
+
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+label,
+input,
+button {
+  display: block;
+}
+
+label{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20%;
+  padding: 0.3rem 0 0.3rem 0.3rem; 
+}
+
+form {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+#form button {
+  padding: 0.5rem;
+  width: 9%;
+  background-color: #00917c;
+  color: linen;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+#form button:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: #ff8b5d;
+  
+}
+
+#features {
+  grid-column: 2 / 3;
+  /* display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  font-family: 'Roboto', sans-serif;
+}
+
+#feature-1,
+#feature-2,
+#feature-3 {
+  display: inline-flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+#feature-1 {
+  gap: 5.3rem;
+}
+#features h3 {
+  font-size: 1.5rem;
+  line-height: 0.1;
+
+}
+
+i {
+  font-size: 3rem;
+  color: #ff8b5d;
+}
+
+#how_it_work {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#pricing {
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
