@@ -18,30 +18,37 @@ html {
 }
 
 body {
-  background-color:  #E9DCC9;
+  background-color:  #eae9e6;
+  margin: 0;
+  padding: 0;
 }
 
 img{
   transform: rotate(-0.25turn);
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  width: 80px; 
 }
 
 #header{
   position: fixed;
-  background-color: #E9DCC9;
+  background-color: #eae9e6;;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
   height: 6rem;
+  left: 0;
+
+ 
 }
 
 #logo {
   display: inline-flex;
   margin-left: 5%;
-  gap: 3rem;
+  gap: 1rem;
+  flex-direction: row;
 }
 
 #logo p {
@@ -56,7 +63,12 @@ img{
   color: black;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  padding-left: 8rem;
+  /* margin-left: 5rem; */
+  padding: 0.6rem 1rem;
+
+}
+
+{
 
 }
 
@@ -64,7 +76,7 @@ main {
   font-family: 'Roboto', sans-serif;
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns:1fr 5fr 1fr;
 }
 
 label,
@@ -80,7 +92,7 @@ label{
 
 input {
   margin-bottom: 1rem;
-  width: 20%;
+  width: 20rem;
   padding: 0.3rem 0 0.3rem 0.3rem; 
 }
 
@@ -89,19 +101,20 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
-#form button {
+#submit {
   padding: 0.5rem;
-  width: 9%;
+  width: 10rem;
   background-color: #00917c;
   color: linen;
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
 
-#form button:hover {
+#submit:hover {
   cursor: pointer;
   border: 1px solid black;
   color: black;
@@ -111,11 +124,9 @@ form {
 
 #features {
   grid-column: 2 / 3;
-  /* display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
   font-family: 'Roboto', sans-serif;
+  margin: auto;
+
 }
 
 #feature-1,
@@ -125,7 +136,7 @@ form {
   gap: 4rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 #feature-1 {
@@ -152,7 +163,142 @@ i {
 
 #pricing {
   grid-column: 2 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: 'Crimson Text', serif;
+  gap: 1rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+#product {
+  border: 1px solid #f2944b;
+}
+
+#product button {
+  margin:auto;
+  margin-bottom: 1rem;
+  background-color: #f2944b;
+  padding: 0.6rem 1.5rem;
+
+}
+
+#product button:hover,
+#nav-bar a:hover  {
+  cursor: pointer;
+  background-color: #00917c;
+  color: linen;
+  border: 1px solid black;
+}
+
+#product h3 {
+  margin: 0;
+  letter-spacing: 0.1rem;
+  background-color: rgb(164, 157, 157);
+  padding: 1rem 0;
+}
+
+#product p {
+  line-height: 2.5;
+}
+
+#footer {
+  background-color: rgb(164, 157, 157);
+  width: 67.5%;
+  margin: 3rem auto 0px auto;
+  text-align: right;
+  bottom: 0;
+  padding: 0.43rem 2rem;
+}
+
+#footer li {
+  text-decoration: none;
+  display: inline;
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+
+#footer p {
+  opacity: 0.5;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 813px) {
+  #logo p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 50px;
+  }
+  
+  #pricing {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #header {
+    flex-direction: column;
+    height: auto
+
+  }
+
+  #nav-bar {
+    margin-top: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.3rem;
+  }
+
+  #nav-bar a {
+    padding: 0;
+    line-height: 1.3;
+  }
+
+  #nav-bar a:hover {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+
+  }
+
+  #form {
+    margin-top: 4rem;
+  }
+
+  #how_it_work {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  i {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  label {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  input {
+    width: 15rem;
+  }
+
+  #submit {
+    width:8rem
+  }
+
+  #features h3 {
+    font-size: 1.2rem;
+  }
+
+ 
 }

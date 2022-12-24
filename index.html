@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>LANDING-PAGE</title>
 </head>
 <body>
   <header id="header">
@@ -17,26 +17,22 @@
       <img src="resources/trumbone.png" 
       alt="trumbone" 
       id="header-img"
-      width="50"
       >
       <p>Original Trombones</p>
     </div>
     <nav id="nav-bar">
-      <a href="#features" id="nav-link">Features</a>
-      <a href="#how_it_work" id="nav-link">How it Works</a>
-      <a href="#pricing" id="nav-link">Pricing</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#how_it_work" class="nav-link">How it Works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
     </nav>
   </header>
   
   <main id="main">
     <form action="https://www.freecodecamp.com/email-submit" id="form">
 
-      <label for="submit">Handcraftr, home-made masterpieces</label>      
-      <input type="email" id="submit" placeholder="Enter your email address">
-
-      <button type="button">
-        GET STARTED
-      </button>
+      <label for="email">Handcraftr, home-made masterpieces</label>      
+      <input type="email" id="email" placeholder="Enter your email address" name="email">
+      <input type="submit" id="submit" value="GET STARTED">
     </form>
     <section id="features">
       <div id="feature-1">
@@ -67,7 +63,9 @@
     
     <section id="pricing">
       <div id="product">
-        <h3 id="product_name">TENOR TROMBONE</h3>
+        <div id="product_name">
+          <h3>TENOR TROMBONE</h3>
+        </div>
         <h2 id="price">$600</h2>
         <p>
           Lorem ipsum.<br>
@@ -78,7 +76,9 @@
         <button type="button">SELECT</button>
       </div>
       <div id="product">
-        <h3 id="product_name">BASS TROMBONE</h3>
+        <div id="product_name">
+          <h3>BASS TROMBONE</h3>
+        </div>
         <h2 id="price">$900</h2>
         <p>
           Lorem ipsum.<br>
@@ -89,7 +89,9 @@
         <button type="button">SELECT</button>
       </div>
       <div id="product">
-        <h3 id="product_name">VALVE TROMBONE</h3>
+        <div id="product_name">
+          <h3>VALVE TROMBONE</h3>
+        </div>
         <h2 id="price">$1200</h2>
         <p>
           Plays similar to a Trumpet<br>
